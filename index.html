@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<!-- Belén de León · versión 05 · enlaces reales y correo ofuscado -->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Belén de León — Protocolo y Relaciones Internacionales</title>
+  <meta name="description" content="Belén de León, especialista en Protocolo y Relaciones Internacionales, cronista y analista. Trayectoria, formación y su libro «Crónicas de El Salvador».">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="canonical" href="https://www.belendeleon.me/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23101b2b'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='28' text-anchor='middle' fill='%23ffffff'%3EBL%3C/text%3E%3C/svg%3E">
+
+  <!-- Open Graph. Cuando exista la foto definitiva, añadir og:image (1200 × 630). -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Belén de León — Protocolo y Relaciones Internacionales">
+  <meta property="og:description" content="Especialista en Protocolo y Relaciones Internacionales, cronista y analista. Conoce su trayectoria, su formación y su libro.">
+  <meta property="og:url" content="https://www.belendeleon.me/">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Belén de León">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Belén de León — Protocolo y Relaciones Internacionales">
+  <meta name="twitter:description" content="Especialista en Protocolo y Relaciones Internacionales, cronista y analista.">
+
+  <!-- Datos de ejemplo: sustituir redes y URLs antes de publicar. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Belén de León",
+    "jobTitle": "Especialista en Protocolo y Relaciones Internacionales",
+    "description": "Cronista y analista. Especialista en Protocolo y Relaciones Internacionales.",
+    "url": "https://www.belendeleon.me/",
+    "knowsAbout": [
+      "Protocolo",
+      "Relaciones Internacionales",
+      "Diplomacia",
+      "Análisis internacional",
+      "Crónica"
+    ],
+    "sameAs": [
+      "https://x.com/B__deLeon",
+      "https://www.instagram.com/Belen.de.Leon",
+      "https://www.sv360.info/"
+    ]
+  }
+  </script>
+
+  <style>
+    /* ============================================================
+       Tokens
+       ============================================================ */
+    :root {
+      --paper: #ffffff;
+      --ink: #101b2b;
+      --muted: #5a6472;
+      --line: #e2e4e6;
+      --accent: #7a2e2e;
+      --accent-dark: #63231f;
+      --portrait-bg: #e9e5dd;
+      --serif: ui-serif, "New York", "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+      --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --gutter: clamp(1.375rem, 5vw, 3rem);
+      --max: 1280px;
+      --section-pad: clamp(3.5rem, 8vw, 7rem);
+    }
+
+    /* ============================================================
+       Base
+       ============================================================ */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    html {
+      color-scheme: light;
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-size: 1.125rem;
+      line-height: 1.68;
+      overflow-x: hidden;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    figure,
+    dl,
+    dd {
+      margin: 0;
+    }
+
+    ul,
+    ol {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    img,
+    svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    ::selection {
+      background: var(--ink);
+      color: var(--paper);
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(calc(100% - var(--gutter) * 2), var(--max));
+      margin-inline: auto;
+    }
+
+    .visually-hidden {
+      position: absolute !important;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* ============================================================
+       Cabecera
+       ============================================================ */
+    .hero {
+      display: grid;
+      gap: clamp(2rem, 5vw, 3.5rem);
+      max-width: var(--max);
+      margin-inline: auto;
+      padding: clamp(2.5rem, 7vh, 5rem) var(--gutter);
+    }
+
+    .hero__content {
+      display: contents;
+    }
+
+    .hero__name {
+      order: 1;
+      margin-bottom: 0;
+      font-family: var(--serif);
+      font-size: clamp(3.1rem, 13vw, 7rem);
+      font-weight: 400;
+      line-height: 0.94;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    .hero__text {
+      order: 3;
+    }
+
+    .hero__role {
+      max-width: 56ch;
+      font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+      line-height: 1.5;
+    }
+
+    .hero__role span {
+      display: block;
+      color: var(--muted);
+    }
+
+    .hero__intro {
+      max-width: 36ch;
+      margin-top: 1.5rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .hero__media {
+      position: relative;
+      order: 2;
+      aspect-ratio: 1 / 1;
+      max-height: 600px;
+      margin-inline: calc(var(--gutter) * -1);
+      overflow: hidden;
+      background: var(--portrait-bg);
+    }
+
+    .hero__media svg,
+    .hero__media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 30%;
+    }
+
+    /* ============================================================
+       Secciones
+       ============================================================ */
+    .section {
+      border-top: 1px solid var(--line);
+      padding-block: var(--section-pad);
+    }
+
+    .section__grid {
+      display: grid;
+      gap: clamp(1.5rem, 4vw, 3rem);
+    }
+
+    .section__title {
+      font-family: var(--serif);
+      font-size: clamp(1.65rem, 2.2vw, 2rem);
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+    }
+
+    .section__content {
+      min-width: 0;
+    }
+
+    /* Sobre mí */
+    .bio__lead {
+      max-width: 30ch;
+      margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+      font-family: var(--serif);
+      font-size: clamp(1.4rem, 2.2vw, 1.75rem);
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+      text-wrap: balance;
+    }
+
+    .bio__text {
+      max-width: 62ch;
+    }
+
+    .bio__text p + p {
+      margin-top: 1rem;
+    }
+
+    .studies {
+      margin-top: clamp(2.5rem, 5vw, 4rem);
+    }
+
+    .studies__title {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .studies__list {
+      display: grid;
+    }
+
+    .studies__item {
+      border-top: 1px solid var(--line);
+      padding-block: 0.9rem 1.1rem;
+    }
+
+    .studies dt {
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .studies dd {
+      margin-top: 0.35rem;
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    /* Libro */
+    .book-list {
+      display: grid;
+      gap: clamp(2.5rem, 5vw, 4rem);
+    }
+
+    .book {
+      display: grid;
+      gap: clamp(1.5rem, 4vw, 2.5rem);
+      align-items: start;
+    }
+
+    .book__cover {
+      display: block;
+      width: min(200px, 48vw);
+      text-decoration: none;
+      box-shadow: 0 18px 36px rgba(16, 27, 43, 0.14);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .book__cover svg,
+    .book__cover img {
+      width: 100%;
+      height: auto;
+    }
+
+    .book__cover:hover {
+      box-shadow: 0 22px 42px rgba(16, 27, 43, 0.2);
+      transform: translateY(-3px);
+    }
+
+    .book__title {
+      margin-bottom: 0.75rem;
+      font-family: var(--serif);
+      font-size: clamp(1.8rem, 3.2vw, 2.7rem);
+      font-weight: 400;
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+      text-wrap: balance;
+    }
+
+    .book__subtitle {
+      max-width: 52ch;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.55;
+    }
+
+    .book__synopsis {
+      max-width: 58ch;
+      margin-bottom: 1.75rem;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0.8rem 1.4rem;
+      border-radius: 2px;
+      background: var(--accent);
+      color: #ffffff;
+      font-size: 0.95rem;
+      font-weight: 600;
+      line-height: 1.2;
+      text-decoration: none;
+      transition: background-color 0.2s ease;
+    }
+
+    .button:hover {
+      background: var(--accent-dark);
+    }
+
+    /* ============================================================
+       Pie
+       ============================================================ */
+    .footer {
+      border-top: 1px solid var(--line);
+      padding-block: clamp(2rem, 4vw, 3rem) clamp(2.5rem, 5vw, 4rem);
+    }
+
+    .footer__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .footer__brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .footer__name {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      line-height: 1.2;
+    }
+
+    .footer__copy {
+      color: var(--muted);
+      font-size: 0.8rem;
+      line-height: 1.4;
+    }
+
+    .socials {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem 1rem;
+    }
+
+    .socials a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      min-width: 44px;
+      min-height: 44px;
+      font-size: 0.95rem;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .socials a:hover {
+      color: var(--accent);
+    }
+
+    .socials svg {
+      width: 18px;
+      height: 18px;
+      flex: none;
+    }
+
+    /* ============================================================
+       Adaptación
+       ============================================================ */
+    @media (min-width: 720px) {
+      .studies__list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2rem;
+      }
+
+      .studies__item {
+        padding-bottom: 0;
+      }
+
+      .footer__inner {
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+    }
+
+    @media (min-width: 760px) {
+      .book {
+        grid-template-columns: 200px minmax(0, 1fr);
+        gap: clamp(2rem, 5vw, 3.5rem);
+      }
+    }
+
+    @media (min-width: 720px) {
+      .hero {
+        grid-template-columns: minmax(0, 1.06fr) minmax(0, 0.94fr);
+        gap: clamp(2rem, 5vw, 5rem);
+        align-items: center;
+        max-width: none;
+        padding-top: clamp(3.5rem, 8vh, 6rem);
+        padding-right: 0;
+        padding-bottom: clamp(3.5rem, 8vh, 6rem);
+        padding-left: max(var(--gutter), calc((100% - var(--max)) / 2));
+      }
+
+      .hero__name {
+        margin-bottom: clamp(1.25rem, 3vw, 2rem);
+        font-size: clamp(3.1rem, 10vw, 7rem);
+      }
+
+      .hero__content {
+        display: block;
+        align-self: center;
+        padding-right: clamp(1rem, 3vw, 3rem);
+      }
+
+      .hero__media {
+        order: 0;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 5;
+        max-height: min(82vh, 780px);
+        margin-inline: 0;
+      }
+    }
+
+    @media (min-width: 900px) {
+      .section__grid {
+        grid-template-columns: minmax(0, 3fr) minmax(0, 9fr);
+        gap: clamp(2rem, 6vw, 6rem);
+      }
+    }
+
+    @media (max-width: 479px) {
+      .button {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ============================================================
+       CABECERA
+       En móvil: nombre, retrato y texto.
+       En escritorio: texto a la izquierda y retrato a la derecha.
+       Retrato real en belen-de-leon.jpg
+       ============================================================ -->
+  <header class="hero" id="inicio">
+    <div class="hero__content">
+      <h1 class="hero__name">Belén de León</h1>
+
+      <div class="hero__text">
+        <p class="hero__role">
+          Especialista en Protocolo y Relaciones Internacionales
+          <span>Cronista y analista</span>
+        </p>
+        <p class="hero__intro">Una mirada atenta a las formas que hacen posible el encuentro entre instituciones y personas.</p>
+      </div>
+    </div>
+
+    <figure class="hero__media">
+      <img src="belen-de-leon.jpg" alt="Retrato de Belén de León" width="1068" height="1073" fetchpriority="high" decoding="async">
+    </figure>
+  </header>
+
+  <main id="contenido">
+    <!-- ============================================================
+         SOBRE MÍ
+         Texto y formación de ejemplo: sustituir por los datos reales.
+         ============================================================ -->
+    <section class="section" id="sobre-mi" aria-labelledby="sobre-mi-title">
+      <div class="container section__grid">
+        <h2 class="section__title" id="sobre-mi-title">Sobre mí</h2>
+
+        <div class="section__content">
+          <p class="bio__lead">El detalle como método: protocolo, crónica y análisis de la vida internacional.</p>
+
+          <div class="bio__text">
+            <p>Belén de León es especialista en Protocolo y Relaciones Internacionales, cronista y analista. Su trabajo se sitúa en el punto donde la forma —el gesto, la precedencia, la palabra— ordena y hace posible el encuentro entre instituciones y personas.</p>
+            <p>Como cronista, observa la actualidad internacional atendiendo a los detalles que explican lo que ocurre. Como analista, traduce esa complejidad en claves claras para quienes necesitan entenderla.</p>
+          </div>
+
+          <div class="studies">
+            <h3 class="studies__title">Formación</h3>
+            <dl class="studies__list">
+              <div class="studies__item">
+                <dt>Máster en Relaciones Internacionales</dt>
+                <dd>Diplomacia, protocolo y análisis internacional.</dd>
+              </div>
+              <div class="studies__item">
+                <dt>Especialización en Protocolo y Ceremonial</dt>
+                <dd>Organización de actos oficiales, precedencia y ceremonial.</dd>
+              </div>
+              <div class="studies__item">
+                <dt>Grado en Comunicación</dt>
+                <dd>Crónica, análisis y narrativa de actualidad.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         LIBRO
+         Portada real en cronicas-de-el-salvador.jpg
+         y enlace de compra a Amazon.
+         Para añadir otro libro, duplica el bloque <article class="book">.
+         ============================================================ -->
+    <section class="section" id="libro" aria-labelledby="libro-title">
+      <div class="container section__grid">
+        <h2 class="section__title" id="libro-title">Libro</h2>
+
+        <div class="section__content">
+          <div class="book-list">
+            <article class="book" aria-labelledby="book-title">
+              <a class="book__cover" href="https://www.amazon.es/CR%C3%93NICAS-EL-SALVADOR-ATREVI%C3%93-RENACER-ebook/dp/B0G6BH6Q3J" target="_blank" rel="noopener sponsored" aria-label="Comprar Crónicas de El Salvador en Amazon (se abre en una nueva pestaña)">
+                <img src="cronicas-de-el-salvador.jpg" alt="Portada de Crónicas de El Salvador, de Belén de León" width="1058" height="1500" loading="lazy" decoding="async">
+              </a>
+
+              <div class="book__details">
+                <h3 class="book__title" id="book-title">Crónicas de El Salvador</h3>
+                <p class="book__subtitle">El país que se atrevió a renacer.</p>
+                <p class="book__synopsis">Una obra testimonial y analítica sobre la historia reciente de El Salvador. Desde su experiencia directa, Belén de León reconstruye la violencia que mutó tras los Acuerdos de Paz de 1992, el poder de las maras y la transformación de un país que se atrevió a renacer.</p>
+                <a class="button" href="https://www.amazon.es/CR%C3%93NICAS-EL-SALVADOR-ATREVI%C3%93-RENACER-ebook/dp/B0G6BH6Q3J" target="_blank" rel="noopener sponsored">Comprar en Amazon<span class="visually-hidden"> (se abre en una nueva pestaña)</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       PIE
+       Redes y web reales. El email se reconstruye con JavaScript
+       para no dejarlo escrito en el HTML.
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__name">Belén de León</p>
+        <p class="footer__copy">© <span id="year">2026</span> Belén de León</p>
+      </div>
+
+      <nav class="socials" aria-label="Redes y contacto">
+        <a href="https://x.com/B__deLeon" target="_blank" rel="noopener noreferrer" aria-label="X (se abre en una nueva pestaña)" title="X">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+          </svg>
+        </a>
+
+        <a href="https://www.instagram.com/Belen.de.Leon" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.2" cy="6.8" r="1.2" fill="currentColor" stroke="none"></circle>
+          </svg>
+          <span>Instagram<span class="visually-hidden"> (se abre en una nueva pestaña)</span></span>
+        </a>
+
+        <a href="https://www.sv360.info/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="9"></circle>
+            <path d="M3.5 12h17M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"></path>
+          </svg>
+          <span>Web<span class="visually-hidden"> (se abre en una nueva pestaña)</span></span>
+        </a>
+
+        <a href="#" data-email aria-label="Enviar un correo a Belén de León">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
+            <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+            <path d="m4 7 8 6 8-6"></path>
+          </svg>
+          <span>Email</span>
+        </a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var year = document.getElementById("year");
+      if (year) {
+        year.textContent = new Date().getFullYear();
+      }
+
+      /* Correo ofuscado en base64: se reconstruye al cargar la página. */
+      var emailLink = document.querySelector("[data-email]");
+      if (emailLink) {
+        var email = atob("Y29udGFjdG9AYmVsZW5kZWxlb24ubWU=");
+        emailLink.href = "mailto:" + email;
+      }
+    })();
+  </script>
+</body>
+</html>
