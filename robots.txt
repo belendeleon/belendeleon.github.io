@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /version
+
+Sitemap: https://www.belendeleon.me/sitemap.xml

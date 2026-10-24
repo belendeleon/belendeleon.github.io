@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.belendeleon.me/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.belendeleon.me/belen-de-leon.jpg</image:loc>
+      <image:title>Retrato de Belén de León</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.belendeleon.me/cronicas-de-el-salvador.jpg</image:loc>
+      <image:title>Portada de Crónicas de El Salvador</image:title>
+    </image:image>
+  </url>
+</urlset>
