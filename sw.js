@@ -1,10 +1,10 @@
-/* Belén de León · service worker · versión 07
+/* Belén de León · service worker · versión 08
    Estrategia:
    - HTML: network-first (si hay red, muestra siempre la versión nueva).
    - Imágenes y estáticos: cache-first (carga rápida y offline).
    Al publicar una nueva versión, cambia CACHE_VERSION para invalidar la caché. */
 
-const CACHE_VERSION = "belendeleon-v07";
+const CACHE_VERSION = "belendeleon-v08";
 const PRECACHE = [
   "./",
   "./index.html",
