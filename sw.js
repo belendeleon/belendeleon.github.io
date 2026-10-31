@@ -1,15 +1,15 @@
-/* Belén de León · service worker · versión 08
+/* Belén de León · service worker · versión 08 · caché v08-r2
    Estrategia:
    - HTML: network-first (si hay red, muestra siempre la versión nueva).
    - Imágenes y estáticos: cache-first (carga rápida y offline).
    Al publicar una nueva versión, cambia CACHE_VERSION para invalidar la caché. */
 
-const CACHE_VERSION = "belendeleon-v08";
+const CACHE_PREFIX = "belendeleon-";
+const CACHE_VERSION = CACHE_PREFIX + "v08-r2";
 const PRECACHE = [
   "./",
   "./index.html",
-  "./belen-de-leon.jpg",
-  "./cronicas-de-el-salvador.jpg"
+  "./belen-de-leon.jpg"
 ];
 
 self.addEventListener("install", (event) => {
@@ -28,7 +28,9 @@ self.addEventListener("activate", (event) => {
       .then((keys) =>
         Promise.all(
           keys
-            .filter((key) => key !== CACHE_VERSION)
+            .filter(
+              (key) => key.startsWith(CACHE_PREFIX) && key !== CACHE_VERSION
+            )
             .map((key) => caches.delete(key))
         )
       )
@@ -49,12 +51,19 @@ self.addEventListener("fetch", (event) => {
         .then((response) => {
           if (response.ok) {
             const copy = response.clone();
-            caches.open(CACHE_VERSION).then((cache) => cache.put(request, copy));
+            event.waitUntil(
+              caches
+                .open(CACHE_VERSION)
+                .then((cache) => cache.put(request, copy))
+                .catch(() => {})
+            );
           }
           return response;
         })
         .catch(() =>
-          caches.match(request).then((cached) => cached || caches.match("./index.html"))
+          caches
+            .match(request)
+            .then((cached) => cached || caches.match("./index.html"))
         )
     );
     return;
@@ -67,7 +76,12 @@ self.addEventListener("fetch", (event) => {
       return fetch(request).then((response) => {
         if (response.ok) {
           const copy = response.clone();
-          caches.open(CACHE_VERSION).then((cache) => cache.put(request, copy));
+          event.waitUntil(
+            caches
+              .open(CACHE_VERSION)
+              .then((cache) => cache.put(request, copy))
+              .catch(() => {})
+          );
         }
         return response;
       });

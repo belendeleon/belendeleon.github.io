@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- Belén de León · versión 08 · trayectoria y formación -->
+<!-- Belén de León · versión 08 · perfil y trayectoria -->
 <html lang="es">
 <head>
   <meta charset="utf-8">
@@ -8,7 +8,6 @@
   <meta name="description" content="Consejera y Directora de NLGForum en Francia. Protocolo internacional, social y cultural. Cronista y articulista, autora de «Crónicas de El Salvador».">
   <meta name="author" content="Belén de León">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <meta name="keywords" content="Belén de León, NLGForum, protocolo internacional, protocolo social, protocolo cultural, relaciones internacionales, crónica, El Salvador, Crónicas de El Salvador">
   <meta name="color-scheme" content="light">
   <meta name="theme-color" content="#ffffff">
   <link rel="canonical" href="https://www.belendeleon.me/">
@@ -40,7 +39,7 @@
   <meta name="twitter:image" content="https://www.belendeleon.me/belen-de-leon.jpg">
   <meta name="twitter:image:alt" content="Retrato de Belén de León">
 
-  <!-- Datos estructurados: persona, sitio, perfil y libro. -->
+  <!-- Datos estructurados: persona, sitio y perfil. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -88,18 +87,6 @@
           "https://www.instagram.com/Belen.de.Leon",
           "https://www.sv360.info/"
         ]
-      },
-      {
-        "@type": "Book",
-        "@id": "https://www.belendeleon.me/#book",
-        "name": "Crónicas de El Salvador",
-        "alternateName": "El país que se atrevió a renacer",
-        "author": { "@id": "https://www.belendeleon.me/#person" },
-        "bookFormat": "https://schema.org/EBook",
-        "inLanguage": "es",
-        "url": "https://www.amazon.es/CR%C3%93NICAS-EL-SALVADOR-ATREVI%C3%93-RENACER-ebook/dp/B0G6BH6Q3J",
-        "image": "https://www.belendeleon.me/cronicas-de-el-salvador.jpg",
-        "description": "Una crónica testimonial, analítica y profundamente humana sobre la historia reciente de El Salvador."
       }
     ]
   }
@@ -144,7 +131,7 @@
       background: var(--paper);
       color: var(--ink);
       font-family: var(--sans);
-      font-size: 1.2375rem;
+      font-size: 1.125rem;
       line-height: 1.68;
       overflow-x: hidden;
     }
@@ -174,6 +161,18 @@
 
     a {
       color: inherit;
+    }
+
+    a.inline-link {
+      color: var(--accent);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.2em;
+      transition: color 0.2s ease;
+    }
+
+    a.inline-link:hover {
+      color: var(--accent-dark);
     }
 
     ::selection {
@@ -235,7 +234,7 @@
 
     .hero__role {
       max-width: 56ch;
-      font-size: clamp(1.155rem, 1.65vw, 1.375rem);
+      font-size: clamp(1.05rem, 1.5vw, 1.25rem);
       line-height: 1.5;
     }
 
@@ -248,21 +247,21 @@
       max-width: 36ch;
       margin-top: 1.5rem;
       color: var(--muted);
-      font-size: 1.155rem;
+      font-size: 1.05rem;
       line-height: 1.6;
     }
 
     .hero__media {
       position: relative;
       order: 2;
+      width: min(78vw, 320px);
       aspect-ratio: 1 / 1;
       max-height: 600px;
-      margin-inline: calc(var(--gutter) * -1);
+      margin-inline: auto;
       overflow: hidden;
       background: var(--portrait-bg);
     }
 
-    .hero__media svg,
     .hero__media img {
       width: 100%;
       height: 100%;
@@ -285,7 +284,7 @@
 
     .section__title {
       font-family: var(--serif);
-      font-size: clamp(1.815rem, 2.42vw, 2.2rem);
+      font-size: clamp(1.65rem, 2.2vw, 2rem);
       font-weight: 400;
       line-height: 1.1;
       letter-spacing: -0.01em;
@@ -296,16 +295,6 @@
     }
 
     /* Sobre mí */
-    .bio__lead {
-      max-width: 30ch;
-      margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
-      font-family: var(--serif);
-      font-size: clamp(1.54rem, 2.42vw, 1.925rem);
-      line-height: 1.35;
-      letter-spacing: -0.01em;
-      text-wrap: balance;
-    }
-
     .bio__text {
       max-width: 62ch;
     }
@@ -314,7 +303,17 @@
       margin-top: 1rem;
     }
 
-    /* Trayectoria y Formación */
+    .studies {
+      margin-top: clamp(2.5rem, 5vw, 4rem);
+    }
+
+    .studies__title {
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
     .studies__list {
       display: grid;
     }
@@ -324,91 +323,17 @@
       padding-block: 0.9rem 1.1rem;
     }
 
-    .studies__list dt {
-      font-size: 1.1rem;
+    .studies dt {
+      font-size: 1rem;
       font-weight: 600;
       line-height: 1.4;
     }
 
-    .studies__list dd {
+    .studies dd {
       margin-top: 0.35rem;
       color: var(--muted);
-      font-size: 1.045rem;
+      font-size: 0.95rem;
       line-height: 1.5;
-    }
-
-    /* Libro */
-    .book-list {
-      display: grid;
-      gap: clamp(2.5rem, 5vw, 4rem);
-    }
-
-    .book {
-      display: grid;
-      gap: clamp(1.5rem, 4vw, 2.5rem);
-      align-items: start;
-    }
-
-    .book__cover {
-      display: block;
-      width: min(200px, 48vw);
-      text-decoration: none;
-      box-shadow: 0 18px 36px rgba(16, 27, 43, 0.14);
-      transition: transform 0.25s ease, box-shadow 0.25s ease;
-    }
-
-    .book__cover svg,
-    .book__cover img {
-      width: 100%;
-      height: auto;
-    }
-
-    .book__cover:hover {
-      box-shadow: 0 22px 42px rgba(16, 27, 43, 0.2);
-      transform: translateY(-3px);
-    }
-
-    .book__title {
-      margin-bottom: 0.75rem;
-      font-family: var(--serif);
-      font-size: clamp(1.98rem, 3.52vw, 2.97rem);
-      font-weight: 400;
-      line-height: 1.06;
-      letter-spacing: -0.02em;
-      text-wrap: balance;
-    }
-
-    .book__subtitle {
-      max-width: 52ch;
-      margin-bottom: 1rem;
-      color: var(--muted);
-      font-size: 1.155rem;
-      line-height: 1.55;
-    }
-
-    .book__synopsis {
-      max-width: 58ch;
-      margin-bottom: 1.75rem;
-    }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 48px;
-      padding: 0.8rem 1.4rem;
-      border-radius: 2px;
-      background: var(--accent);
-      color: #ffffff;
-      font-size: 1.045rem;
-      font-weight: 600;
-      line-height: 1.2;
-      text-decoration: none;
-      transition: background-color 0.2s ease;
-    }
-
-    .button:hover {
-      background: var(--accent-dark);
     }
 
     /* ============================================================
@@ -477,7 +402,7 @@
        ============================================================ */
     @media (min-width: 720px) {
       .studies__list {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 2rem;
       }
 
@@ -491,16 +416,7 @@
         justify-content: space-between;
         gap: 2rem;
       }
-    }
 
-    @media (min-width: 760px) {
-      .book {
-        grid-template-columns: 200px minmax(0, 1fr);
-        gap: clamp(2rem, 5vw, 3.5rem);
-      }
-    }
-
-    @media (min-width: 720px) {
       .hero {
         grid-template-columns: minmax(0, 1.06fr) minmax(0, 0.94fr);
         gap: clamp(2rem, 5vw, 5rem);
@@ -540,12 +456,6 @@
       }
     }
 
-    @media (max-width: 479px) {
-      .button {
-        width: 100%;
-      }
-    }
-
     @media (prefers-reduced-motion: reduce) {
       html {
         scroll-behavior: auto;
@@ -578,7 +488,9 @@
           Consejera y Directora de NLGForum en Francia · Protocolo Internacional, Social y Cultural
           <span>Cronista y articulista</span>
         </p>
-        <p class="hero__intro">Soy una voz europea independiente, especializada en dinámicas sociales en Latinoamérica. Desde mi testimonio directo, documento transformaciones políticas, institucionales y culturales para el mutuo entendimiento entre Europa y América.</p>
+        <p class="hero__intro">
+          Soy una voz europea independiente, especializada en dinámicas sociales en Latinoamérica. Documento transformaciones políticas, institucionales y culturales para el mutuo entendimiento entre Europa y América.
+        </p>
       </div>
     </div>
 
@@ -589,75 +501,65 @@
 
   <main id="contenido">
     <!-- ============================================================
-         TRAYECTORIA Y FORMACIÓN
-         Tres columnas: dirección, protocolo y psicología.
-         ============================================================ -->
-    <section class="section" id="trayectoria" aria-labelledby="trayectoria-title">
-      <div class="container section__grid">
-        <h2 class="section__title" id="trayectoria-title">Trayectoria y Formación</h2>
-
-        <div class="section__content">
-          <dl class="studies__list">
-            <div class="studies__item">
-              <dt>Dirección Institucional</dt>
-              <dd>Consejera y Directora de NLGForum en Francia. Proyectos educacionales y articulación institucional.</dd>
-            </div>
-            <div class="studies__item">
-              <dt>Protocolo Institucional, Social, Cultural y Militar</dt>
-              <dd>Máster y especialización. Análisis de contexto exterior aplicado a ceremoniales y relaciones institucionales.</dd>
-            </div>
-            <div class="studies__item">
-              <dt>Psicología Positiva Aplicada</dt>
-              <dd>Estudios del comportamiento humano frente al control social y resiliencia en comunidades bajo violencia prolongada.</dd>
-            </div>
-          </dl>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============================================================
          SOBRE MÍ
-         Texto biográfico. La trayectoria y formación va arriba.
+         Texto biográfico y trayectoria.
          ============================================================ -->
     <section class="section" id="sobre-mi" aria-labelledby="sobre-mi-title">
       <div class="container section__grid">
         <h2 class="section__title" id="sobre-mi-title">Sobre mí</h2>
 
         <div class="section__content">
-          <p class="bio__lead">Comprender antes de juzgar: memoria, análisis y vocación de puente.</p>
-
           <div class="bio__text">
-            <p>Al frente de NLGForum en Francia, mi labor institucional se orienta a la pedagogía, el encuentro diplomático y el entendimiento constructivo entre sociedades de diversas culturas.</p>
-            <p>Mi vocación de cronista me lleva a escribir mi primer libro, nacido de la necesidad de hacer justicia con la memoria. Haber vivido en El Salvador de la posguerra y mantener mis vínculos con Centroamérica me brindó la oportunidad de narrar desde la experiencia personal, ofreciendo un testimonio directo con la intención de despejar prejuicios en Europa, explicar de qué punto partían y entender el alcance real de su transformación.</p>
+            <p>
+              Los años de residencia y experiencias personales en distintos países de Latinoamérica y Europa me aportan un conocimiento directo de sus realidades y una perspectiva intercultural y comparada.
+            </p>
+            <p>
+              Desde esas vivencias, analizo y contextualizo procesos y transformaciones políticas, sociales y culturales mediante artículos, conferencias y coloquios, aportando contexto que favorezca el diálogo entre los dos continentes.
+            </p>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ============================================================
-         LIBRO
-         Portada real en cronicas-de-el-salvador.jpg
-         y enlace de compra a Amazon.
-         Para añadir otro libro, duplica el bloque <article class="book">.
-         ============================================================ -->
-    <section class="section" id="libro" aria-labelledby="libro-title">
-      <div class="container section__grid">
-        <h2 class="section__title" id="libro-title">Libro</h2>
-
-        <div class="section__content">
-          <div class="book-list">
-            <article class="book" aria-labelledby="book-title">
-              <a class="book__cover" href="https://www.amazon.es/CR%C3%93NICAS-EL-SALVADOR-ATREVI%C3%93-RENACER-ebook/dp/B0G6BH6Q3J" target="_blank" rel="noopener sponsored" aria-label="Comprar Crónicas de El Salvador en Amazon (se abre en una nueva pestaña)">
-                <img src="cronicas-de-el-salvador.jpg" alt="Portada de Crónicas de El Salvador, de Belén de León" width="1058" height="1500" loading="lazy" decoding="async">
-              </a>
-
-              <div class="book__details">
-                <h3 class="book__title" id="book-title">Crónicas de El Salvador</h3>
-                <p class="book__subtitle">El país que se atrevió a renacer.</p>
-                <p class="book__synopsis">Una crónica testimonial, analítica y, sobre todo, profundamente humana sobre la historia reciente de El Salvador. Los años que viví en el país durante la posguerra y mi vínculo en el tiempo hasta el presente me brindaron la oportunidad de reconstruir la violencia que mutó tras la firma de la paz en 1992, la infiltración de las pandillas en las instituciones, en toda la sociedad, y el camino recorrido hasta el día de hoy por un pueblo que decidió luchar por sus vidas, su libertad y su dignidad.</p>
-                <a class="button" href="https://www.amazon.es/CR%C3%93NICAS-EL-SALVADOR-ATREVI%C3%93-RENACER-ebook/dp/B0G6BH6Q3J" target="_blank" rel="noopener sponsored">Comprar en Amazon<span class="visually-hidden"> (se abre en una nueva pestaña)</span></a>
+          <div class="studies">
+            <h3 class="studies__title">Trayectoria y Formación</h3>
+            <dl class="studies__list">
+              <div class="studies__item">
+                <dt>Dirección Institucional</dt>
+                <dd>
+                  Consejera y Directora de NLGForum en Francia. Proyectos educacionales y articulación institucional. Cronista y articulista especializada en Latinoamérica. Autora de
+                  <a
+                    class="inline-link"
+                    href="https://www.amazon.es/CR%C3%93NICAS-EL-SALVADOR-ATREVI%C3%93-RENACER-ebook/dp/B0G6BH6Q3J?th=1"
+                    target="_blank"
+                    rel="noopener sponsored"
+                    aria-label="Crónicas de El Salvador. El país que se atrevió a renacer (se abre en una nueva pestaña)"
+                  >Crónicas de El Salvador. El país que se atrevió a renacer</a>
+                  y editora de
+                  <a
+                    class="inline-link"
+                    href="https://www.sv360.info/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="SV360 (se abre en una nueva pestaña)"
+                  >SV360</a>.
+                </dd>
               </div>
-            </article>
+              <div class="studies__item">
+                <dt>Protocolo Institucional, Social, Cultural y Militar</dt>
+                <dd>Máster y especialización. Análisis de contexto exterior aplicado a ceremoniales y relaciones institucionales.</dd>
+              </div>
+              <div class="studies__item">
+                <dt>Psicología Positiva Aplicada</dt>
+                <dd>
+                  Formación orientada al análisis del comportamiento humano y los procesos de resiliencia individual y colectiva en sociedades que atraviesan transformaciones profundas,
+                  especialmente en el tránsito de contextos de violencia y control social hacia escenarios de seguridad y libertad.
+                </dd>
+              </div>
+              <div class="studies__item">
+                <dt>Conferencias y colaboraciones institucionales</dt>
+                <dd>
+                  Desde el análisis y la divulgación pedagógica, contribuyo a generar espacios de reflexión y diálogo sobre las realidades sociales, políticas y culturales de Europa e Hispanoamérica.
+                </dd>
+              </div>
+            </dl>
           </div>
         </div>
       </div>
@@ -666,8 +568,8 @@
 
   <!-- ============================================================
        PIE
-       Redes y web reales. El email se reconstruye con JavaScript
-       para no dejarlo escrito en el HTML.
+       Redes y contacto. El email se ofusca en base64 y se
+       reconstruye con JavaScript para dificultar su recolección.
        ============================================================ -->
   <footer class="footer">
     <div class="container footer__inner">
@@ -692,20 +594,12 @@
           <span>Instagram<span class="visually-hidden"> (se abre en una nueva pestaña)</span></span>
         </a>
 
-        <a href="https://www.sv360.info/" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
-            <circle cx="12" cy="12" r="9"></circle>
-            <path d="M3.5 12h17M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"></path>
-          </svg>
-          <span>Web<span class="visually-hidden"> (se abre en una nueva pestaña)</span></span>
-        </a>
-
-        <a href="#" data-email aria-label="Enviar un correo a Belén de León">
+        <a href="#" data-email aria-label="Contacto: enviar un correo a Belén de León">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true" focusable="false">
             <rect x="3" y="5" width="18" height="14" rx="2"></rect>
             <path d="m4 7 8 6 8-6"></path>
           </svg>
-          <span>Email</span>
+          <span>Contacto</span>
         </a>
       </nav>
     </div>
@@ -721,8 +615,12 @@
       /* Correo ofuscado en base64: se reconstruye al cargar la página. */
       var emailLink = document.querySelector("[data-email]");
       if (emailLink) {
-        var email = atob("Y29udGFjdG9AYmVsZW5kZWxlb24ubWU=");
-        emailLink.href = "mailto:" + email;
+        var encodedEmail = ["Y29udGFjdG9A", "YmVsZW5kZWxlb24ubWU="].join("");
+        try {
+          emailLink.href = "mailto:" + atob(encodedEmail);
+        } catch (error) {
+          /* Si la cadena no es válida, el enlace conserva su href neutral. */
+        }
       }
 
       /* Caché: HTML network-first y estáticos cache-first. */
